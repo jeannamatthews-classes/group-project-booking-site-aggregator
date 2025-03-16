@@ -1,1 +1,2 @@
-
+3/11-3/16, 115 minutes
+task: created the Gantt chart and made a more specific chart in the Jira
