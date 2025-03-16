@@ -1,1 +1,9 @@
+Date: 3/16/2025
+Time Spent: ~120 minutes
+Task Description:
+I structured the required layout for the assignment, "Additions to GitHub Repos and Time Tracking Materials." This involved:
 
+Creating the docs directory.
+Adding the planning and timelog subdirectories.
+Setting up a 20250303 subdirectory under planning and uploading the necessary files.
+Organizing the timelog section by adding my own subdirectory and informing the team members to add theirs.
