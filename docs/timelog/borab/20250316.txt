@@ -1,0 +1,8 @@
+Date: 3/16/2025
+Time Spent: ~60 minutes
+Task Description:
+
+I was working on the backend development, focusing on database design and API integration. 
+My tasks involved understanding the system architecture, particularly the microservices approach 
+for managing staff, authentication, and rewards. I also explored how different backend components interact, 
+including user authentication, shift management, and payment gateway integration using Stripe API
