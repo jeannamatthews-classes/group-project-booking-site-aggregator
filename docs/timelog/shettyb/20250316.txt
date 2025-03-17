@@ -1,0 +1,9 @@
+Date: 3/16/2025
+Time Spent: ~180 minutes
+Task Description:
+This description includes all the task done till date.
+a. Registered for RAPs.
+b. Did all the documentation for GANTT chart and Identification of Key Risks.(Initial Schedule and brainstroming)
+c. Did partial documentation work for Proposing Design Document Contents and Format (High level Design flow, use case diagram, design document)
+d. I have updated the Initial Design Document.
+e. Referred the tables for staff_details created by Ankit.
