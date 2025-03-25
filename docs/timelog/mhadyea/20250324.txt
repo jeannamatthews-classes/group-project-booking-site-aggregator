@@ -1,0 +1,5 @@
+Date: 3/24/2025
+Time Spent: ~120 minutes
+Task Description:
+BackEnd:-I have designed the API for getting the data from the database table and perform the curd operation main.py file checked in the GIT.
+FrontEnd :-Working on creating the UI/UX so that the data from the API can be dispalyed.
