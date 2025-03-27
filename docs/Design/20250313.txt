@@ -1,0 +1,11 @@
+Date: 03/13/2025
+
+Description:
+
+****Architectural Design****
+The Architectural design provides the high-level structure of a system. 
+It focuses on how different components interact, the technologies used, and how scalability, security, and performance are handled. 
+Thereby providing a blueprint for the overall framework of the system.
+
+****System Design****
+In system design we have shown detailed implementation of the system.
