@@ -16,7 +16,6 @@ P.S. The 20250303 subdirectory contains a total of four files, each serving a sp
 4: Mind Map.pdf → A PDF representation of our project's conceptual framework.
 
 
-DATE, TIME(MINUTES), Description
 March 17, 2025, 60 minutes: Reviewed and made adjustments to the database schema, checking for any errors or inconsistencies to ensure it aligns with project requirements.
 March 18, 2025, 45 minutes: Set up the development environment on Visual Studio Code, configuring necessary tools and extensions to implement the project's design.
 
