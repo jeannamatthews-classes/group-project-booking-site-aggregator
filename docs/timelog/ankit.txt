@@ -1,0 +1,17 @@
+Timelog
+
+Date: 3/16/2025
+Time Spent: ~120 minutes
+Task Description:
+I have designed the Initial Design Document Submission created the ER diagram also created a conceptual diagram
+Created database schema 
+Intial schema and intial setup for enivroment and database  for python and anugular 
+Created tables for staff_details
+
+Date: 3/17/2025- 3/24/2025
+Time Spent: ~ 18 hours
+Task Description:
+BackEnd:-I have designed the API for getting the data from the database table and perform the curd operation main.py file checked in the GIT.
+Created the Datbase connected configurations.
+Created the models of database table in python.
+FrontEnd :-Working on creating the UI/UX so that the data from the API can be dispalyed.
