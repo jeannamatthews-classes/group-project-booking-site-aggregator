@@ -6,6 +6,7 @@
     position: fixed;
     height: 100%;
     overflow: auto;
+  
   }
 
   .sidebar a {
@@ -54,8 +55,8 @@
     width: 200px;
     background-color: #f1f1f1;
     position: fixed;
-    left: 220px;
-    top: 47px;
+    margin-left: 200px;
+    top: 59px;
     height: 50%;
     overflow: auto;
   }
@@ -96,4 +97,18 @@
       .sidebar-right { padding-top: 15px; }
       .sidebar-right a { font-size: 18px; }
     }
+  }
+
+  /* section for the content of pages */
+
+  .container{
+    display: flex;
+    height: 100vh;
+    margin-left: 400px;
+  }
+
+  .content{
+    flex-grow: 1;
+    padding: 20px;
+    background-color: lightgrey;
   }

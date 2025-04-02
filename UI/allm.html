@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking Site Aggregator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="web.html">Home</a>
+        <a href="allm.html">Inbox</a>
+        <a href="properties.html">Properties</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="guest.html">Guest Experience</a>
+        <a href="payment.html">Payment</a>
+        <a href="manage.html">Management</a>
+        <a href="settings.html">Settings</a>
+    </div>
+    <div class="sidebar-right">
+        <a class="active" href="allm.html">All Messages</a>
+        <a href="unread.html">Unread</a>
+        <a href="starred.html">Starred</a>
+        <a href="sent.html">Sent</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>All messages</h1>
+            <div id="messages">
+                <p>Message 1: Welcome to our booking site!</p>
+                <p>Message 2: Your booking has been confirmed.</p>
+                <p>Message 3: Don't forget to check in!</p>
+            </div>
+            <form id="messageForm">
+                <input type="text" id="messageInput" placeholder="Type your message here..." required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        // JavaScript to handle message submission and display
+        const messageForm = document.getElementById('messageForm');
+        const messageInput = document.getElementById('messageInput');
+        const messagesDiv = document.getElementById('messages');
+
+        messageForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            // Get the message text
+            const messageText = messageInput.value.trim();
+
+            if (messageText) {
+                // Create a new message element
+                const messageElement = document.createElement('p');
+                messageElement.textContent = messageText;
+
+                // Add the message to the messages div
+                messagesDiv.appendChild(messageElement);
+
+                // Clear the input field
+                messageInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
