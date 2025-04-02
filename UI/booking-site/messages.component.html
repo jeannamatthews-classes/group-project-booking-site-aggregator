@@ -1,0 +1,23 @@
+<div class="messages-container">
+    <h1>All Messages</h1>
+    <div *ngFor="let message of messages">
+      <p><strong>{{ message.sender }}</strong>: {{ message.text }}</p>
+    </div>
+    <form (ngSubmit)="sendMessage()">
+      <input
+        type="text"
+        [(ngModel)]="newMessage.sender"
+        name="sender"
+        placeholder="Your name"
+        required
+      />
+      <input
+        type="text"
+        [(ngModel)]="newMessage.text"
+        name="text"
+        placeholder="Type your message here..."
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+  </div>
