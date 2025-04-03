@@ -8,3 +8,6 @@ time: 1 hour
 
 03/25/25-was trying to get the code from group repo to run on personal machine to start work. Additionally, played around with a state diagram but decided it's not needed
 time: 5 hours
+
+04/03/25-Past week, I have been working on the UI for the website as well as trying to configure the API for sending and receiving messages. Set up an Angular server as well as a backend. The messages do not work yet, but progress has been made
+time: 17 hours
