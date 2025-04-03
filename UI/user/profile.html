@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .profile-container {
+            background: white;
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #333;
+        }
+        .profile-info {
+            margin-top: 20px;
+        }
+        .profile-info h2 {
+            color: #333;
+        }
+        .profile-info p {
+            color: #666;
+            font-size: 18px;
+        }
+        .edit-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .edit-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        User Profile
+    </header>
+    
+    <section class="profile-container">
+        <div class="profile-pic">
+            <img src="/static/images/default-profile.png" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>Ashik Ahamed</h2>
+            <p>Email: ahameda@clarkson.edu</p>
+            <p>Joined: January 2025</p>
+            <a href="edit_profile.html" class="edit-btn">Edit Profile</a>
+        </div>
+    </section>
+</body>
+</html>
