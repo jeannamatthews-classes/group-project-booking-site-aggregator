@@ -1,1 +1,35 @@
+Date: 3/16/2025
+Time Spent: ~180 minutes
+Task Description:
+This description includes all the task done till date.
+a. Registered for RAPs.
+b. Did all the documentation for GANTT chart and Identification of Key Risks.(Initial Schedule and brainstroming)
+c. Did partial documentation work for Proposing Design Document Contents and Format (High level Design flow, use case diagram, design document)
+d. I have updated the Initial Design Document.
+e. Referred the tables for staff_details created by Ankit.
 
+Date: 3/17/2025 - 3/24/2025
+Time Spent: ~17 hours
+Task Description:
+1. Created Booking Site Aggregator database and included Staff table.
+2. The staff tables consist below details:
+a. Name
+b. Gender
+c. Phone_number
+d. Email_id
+e. DOB
+f. Shift
+g. Attends
+h. Employee ID
+3. Further would be working to create table for Inventory, Rewards, Authentication.
+
+Date: 3/25/2025 - 04/01/2025
+Time Spent: ~ 6 hours
+Task Description: 
+1. Spent few hours to learn how a dynamic UI could be created using HTML/CSS
+2. Updated the GANTT chart for the team.
+3. Also, was trying to get the code from group repo to run on personal machine to start work.
+
+Date: 04/02/2025 - 04/08/2024
+Task Description:
+1. Working on ppt for RAPS.
