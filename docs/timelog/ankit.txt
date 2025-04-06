@@ -22,4 +22,5 @@ Task Description:
 Created UI designed display the manager details
 Created UI designed display the  Home menu 
 Created UI designed display the  Customer details with the Loyalty programs so that customer gets the rewards on the spends.
+Worked on files:-https://github.com/jeannamatthews-classes/group-project-booking-site-aggregator/tree/main/UI/Booking_site_Aggregator/src/app/component
 
