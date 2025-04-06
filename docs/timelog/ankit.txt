@@ -15,3 +15,11 @@ BackEnd:-I have designed the API for getting the data from the database table an
 Created the Datbase connected configurations.
 Created the models of database table in python.
 FrontEnd :-Working on creating the UI/UX so that the data from the API can be dispalyed.
+
+Date: 3/24/2025- 3/31/2025
+Time Spent: ~ 18 hours
+Task Description:
+Created UI designed display the manager details
+Created UI designed display the  Home menu 
+Created UI designed display the  Customer details with the Loyalty programs so that customer gets the rewards on the spends.
+
