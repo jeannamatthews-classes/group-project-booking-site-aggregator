@@ -20,4 +20,4 @@ Time Spent: Approximately  30 hours
 Task Description:  
 I have contributed to enhancing the UI/UX design by refining the user authentication page. This includes optimizing the login workflow and integrating advanced security features to ensure robust user authentication. The improvements made can be seamlessly integrated into Ankit's ongoing project to enhance overall user experience and security.
 
-I estimate that these tasks took additional time to ensure thorough testing and integration, bringing the total time invested in this aspect of the project to approximately 12 hours. This includes both design and coding, along with collaboration with other team members to align this enhancement with the broader project objectives.
+I estimate that these tasks took additional time to ensure thorough testing and integration, bringing the total time invested in this aspect of the project to approximately 30 hours. This includes both design and coding, along with collaboration with other team members to align this enhancement with the broader project objectives.
