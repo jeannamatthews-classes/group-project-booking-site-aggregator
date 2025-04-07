@@ -27,4 +27,5 @@ On March 21, 2025, spent 1.5 hours setting up the backend code.
 2025 Mar 27, 180 minutes, Create UI User Login Page and style.cs to help with coding conventions. Also Delete "docs/timelog/ahameda" directory and add all of these information to the new 
                           new file name "Ashik".
 
-06/03/25 – 20 hours: Worked on UI pages (Login, Registration, User Profile), Dashboard, configured message API, and created PPT for upcoming RAPS.
+06/03/25 – 20 hours: Worked on UI pages (Login, Registration, User Profile), Dashboard, and created PPT for upcoming RAPS. Additionally, I’ve built a Python file named main.py using FastAPI.
+                     It works as an API to connect a booking site aggregator to the UT database.The API handles CRUD operations and connects via PostgreSQL.
