@@ -16,7 +16,7 @@ ensuring a user-friendly and aesthetically pleasing interface. Continued develop
 
 
 Date: 4/06/2025  
-Time Spent: Approximately  12 hours  
+Time Spent: Approximately  30 hours  
 Task Description:  
 I have contributed to enhancing the UI/UX design by refining the user authentication page. This includes optimizing the login workflow and integrating advanced security features to ensure robust user authentication. The improvements made can be seamlessly integrated into Ankit's ongoing project to enhance overall user experience and security.
 
