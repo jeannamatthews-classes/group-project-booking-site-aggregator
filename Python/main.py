@@ -1,3 +1,5 @@
+from datetime import date
+from typing import Optional
 from fastapi import FastAPI, HTTPException
 from starlette.middleware.cors import CORSMiddleware
 import psycopg2
@@ -136,8 +138,9 @@ def update_staff_details(ID: int, Name: str = None, Gender: str = None, Phone_nu
     except Exception as e:
         conn.rollback()
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
-# Customer API
 
+
+# Customer APIs
 @app.get("/fetchCustomerdetails")
 def root():
     try:
@@ -148,3 +151,74 @@ def root():
     except Exception as e:
         return {"error": str(e)}  # Return the error message if any
 
+
+
+
+@app.put("/updatesCustomerdetails/{CustomerID}")
+def update_staff_details(CustomerID: int, Reservations: str = None, Name: str = None,
+                         Email_Id : str=None,
+                          Phone_num: int = None, Preferences: str = None, Payment_history: str = None,
+                            Check_In_Date: Optional[date] = None,
+    Check_Out_Date: Optional[date] = None,Loyalty_programs: int = None): 
+    if cursor is None:
+        raise HTTPException(status_code=500, detail="Database connection error")
+    
+    try:
+        # Building dynamic update query
+        update_fields = []
+        values = []
+        
+        if CustomerID is not None:
+            update_fields.append('"CustomerID" = %s')
+            values.append(CustomerID)
+        if Reservations is not None:
+            update_fields.append('"Reservations" = %s')
+            values.append(Reservations)
+        if Name is not None:
+            update_fields.append('"Name" = %s')
+            values.append(Name)
+        if Email_Id is not None:
+            update_fields.append('"Email_Id" = %s')
+            values.append(Email_Id)
+        if Phone_num is not None:
+            update_fields.append('"Phone_num" = %s')
+            values.append(Phone_num)
+        if Preferences is not None:
+            update_fields.append('"Preferences" = %s')
+            values.append(Preferences)
+        if Payment_history is not None:
+            update_fields.append('"Payment_history" = %s')
+            values.append(Payment_history)
+        if Check_In_Date is not None:
+            update_fields.append('"Check_In_Date" = %s')
+            values.append(Check_In_Date)
+        if Check_Out_Date is not None:
+            update_fields.append('"Check_Out_Date" = %s')
+            values.append(Check_Out_Date)
+        if Loyalty_programs is not None:
+            update_fields.append('"Loyalty_programs" = %s')
+            values.append(Loyalty_programs)
+        
+
+
+        if not update_fields:
+            raise HTTPException(status_code=400, detail="No fields provided for update")
+
+        values.append(CustomerID)
+        query = f'UPDATE public."Customer_details" SET {", ".join(update_fields)} WHERE "CustomerID" = %s;'
+        
+        cursor.execute(query, tuple(values))
+        
+        if cursor.rowcount == 0:
+            return {"message": "No staff found with the given ID"}
+        
+        conn.commit()
+        return {"message": "Customer details updated successfully"}
+    
+    except psycopg2.Error as e:
+        conn.rollback()
+        raise HTTPException(status_code=400, detail=f"Database error: {str(e)}")
+    
+    except Exception as e:
+        conn.rollback()
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
