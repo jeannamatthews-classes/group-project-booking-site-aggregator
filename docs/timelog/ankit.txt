@@ -24,3 +24,11 @@ Created UI designed display the  Home menu
 Created UI designed display the  Customer details with the Loyalty programs so that customer gets the rewards on the spends.
 Worked on files:-https://github.com/jeannamatthews-classes/group-project-booking-site-aggregator/tree/main/UI/Booking_site_Aggregator/src/app/component
 
+Date: 4/01/2025- 4/08/2025
+Time Spent: ~ 18 hours
+Task Description:
+Created UI designed display Inventory management
+Created UI designed display autentication page with username and password.
+Worked on autentication api to validate the user id and password from the front end.
+Worked on Presentation for the Project.
+Worked on files:-https://github.com/jeannamatthews-classes/group-project-booking-site-aggregator/tree/main/UI/Booking_site_Aggregator/src/app/component
