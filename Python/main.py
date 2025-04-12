@@ -7,7 +7,7 @@ from psycopg2.extras import RealDictCursor
 
 app = FastAPI()
 
-# Add CORS middleware
+# Add CORS middleware 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:4200"],  # Allow the frontend app running on localhost:4200
@@ -16,6 +16,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
+#use try and catch
 try:
     conn = psycopg2.connect(
         host="localhost",
