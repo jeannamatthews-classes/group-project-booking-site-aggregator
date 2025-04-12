@@ -26,12 +26,12 @@ Worked on files:-https://github.com/jeannamatthews-classes/group-project-booking
 
 Date: 4/01/2025- 4/08/2025
 4/01/2025,8 hours,Created UI designed display Inventory management
-4/02/2025,5 hours,Created UI designed display autentication page with username and password.
+4/02/2025,5 hours,Created UI designed display autentication page with username and password.Commit id:-aa363ccf766f1e573b8c35eba7a8ffba5661d355
 4/03/2025,5 hours,Worked on autentication api to validate the user id and password from the front end.
 4/04/2025,5 hours, worked on integartion of UI with the authentication API
 4/05/2025,3 hours,Worked on Presentation for the Project(RAPS).
 4/06/2025,5 hours,Worked on redesigning the home menus and adjusting the size and layout.
 4/06/2025,5 hours, Worked on enhanching the home menus and trying to add new items in it.
+4/07/2025,5 hours, Worked on Api for managing the customer details.Commit id:-43309928cdc3d5de68234afd857c8ab39404ebd1
+Commit Id:-https://github.com/jeannamatthews-classes/group-project-booking-site-aggregator/commit/497201833ebc1a99fcf505c5d2ed3adbc6f69aaf.
 
-
-Worked on files:-https://github.com/jeannamatthews-classes/group-project-booking-site-aggregator/tree/main/UI/Booking_site_Aggregator/src/app/component
