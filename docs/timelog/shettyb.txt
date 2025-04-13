@@ -41,14 +41,14 @@ j. Loyalty Programs
 3. Also, was trying to get the code from group repo to run on personal machine to start work.
 
 Date: 04/01/2025 - 04/08/2024
-Time Spent: 5 hours
+Time Spent: 13.5 hours
 Task Description:
-1. Created the entire ppt for RAPS. commit Id:-
-2. Created public credentials table for authentication that include below records:
+1. 04/01/2025, 3 hours, Created the entire ppt for RAPS. commit Id:-600a25f01deb1f12477262bc03f50e713be4108c
+2. 04/02/2025 - 04/04/2025, 4.5 hours, Created public credentials table for authentication that include below records:
 a. Username
 b. Password
-commit Id:-
-3. Worked on inventory table for adding the details for the inventory that include below records:
+commit Id:- 4fb2d2428100d61a006b1f4a6207c89ae196f0ee
+3. 04/05/2025 - 04/08/2025, 5 hours, Worked on inventory table for adding the details for the inventory that include below records:
 a. InventoryID
 b. PropertyName
 c. Location
@@ -57,6 +57,6 @@ e. Capacity
 f. Status
 g. PricePerNight
 h. LastUpdated
-commit Id:-
-4. Worked on discussion of the more funcationlity with the team.
-5. Worked on the local setup for the UI Part on my local machine.
+commit Id:- 3ce3f3187da0f2947baec2df0b7569683c5e5b23
+4. 04/08/2025, 15 mins, Worked on discussion of the more funcationality with the team.
+5. 04/08/2025, 45 mins, Worked on the local setup for the UI Part on my local machine.
