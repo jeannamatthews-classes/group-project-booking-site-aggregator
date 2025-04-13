@@ -5,6 +5,20 @@ from starlette.middleware.cors import CORSMiddleware
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
+"""This is a FastAPI application that connects to a mySQL database and provides endpoints for managing staff and customer details.
+    It is the main backend application for the Booking Site Aggregator project. It handles CRUD operations for staff and customer details.
+    The application uses FastAPI for building the API and psycopg2 for connecting to the mySQL database. 
+
+
+Raises:
+    HTTPException: status coe 400
+    HTTPException: status code 500
+    HTTPException: Exception: error connecting to database
+    HTTPException: Exception: error connecting to server
+
+Returns:
+    _type_: void
+"""
 app = FastAPI()
 
 # Add CORS middleware 
