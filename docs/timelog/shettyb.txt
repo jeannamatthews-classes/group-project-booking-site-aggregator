@@ -43,8 +43,20 @@ j. Loyalty Programs
 Date: 04/01/2025 - 04/08/2024
 Time Spent: 5 hours
 Task Description:
-1. Created the entire ppt for RAPS.
-2. Created public credentials table that include below records:
+1. Created the entire ppt for RAPS. commit Id:-
+2. Created public credentials table for authentication that include below records:
 a. Username
 b. Password
-
+commit Id:-
+3. Worked on inventory table for adding the details for the inventory that include below records:
+a. InventoryID
+b. PropertyName
+c. Location
+d. UnitType
+e. Capacity
+f. Status
+g. PricePerNight
+h. LastUpdated
+commit Id:-
+4. Worked on discussion of the more funcationlity with the team.
+5. Worked on the local setup for the UI Part on my local machine.
