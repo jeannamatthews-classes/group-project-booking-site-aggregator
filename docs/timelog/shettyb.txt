@@ -23,7 +23,7 @@ g. Attends
 h. Employee ID
 3. Further would be working to create table for Inventory, Rewards, Authentication.
 
-Date: 3/25/2025 - 04/01/2025
+Date: 3/25/2025 - 03/31/2025
 Time Spent: ~ 6 hours
 Task Description: 
 1. Spent few hours to learn how a dynamic UI could be created using HTML/CSS
@@ -40,7 +40,7 @@ i. Check out Date
 j. Loyalty Programs
 3. Also, was trying to get the code from group repo to run on personal machine to start work.
 
-Date: 04/02/2025 - 04/08/2024
+Date: 04/01/2025 - 04/08/2024
 Time Spent: In Progress
 Task Description:
 1. Working on ppt for RAPS.
