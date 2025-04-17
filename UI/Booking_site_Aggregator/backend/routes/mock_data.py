@@ -5,6 +5,12 @@ from typing import List
 import random
 import datetime
 
+"""File of mock data to fill in the bookings, guests, and messages for the booking site aggregator.
+
+
+Returns:
+    _type_: data
+"""
 router = APIRouter()
 
 # In-memory mock data

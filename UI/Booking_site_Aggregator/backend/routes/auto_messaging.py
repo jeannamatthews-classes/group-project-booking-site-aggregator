@@ -3,6 +3,13 @@ from fastapi import APIRouter
 from datetime import datetime
 from typing import List
 
+"""This is the auto-messaging module. It handles the messages that are to be sent to clients 
+at specified times. The messages are stored in a database to be reused and retrieved for later use.
+This allows for modularity and code reuse. 
+
+Returns:
+    _type_: messages that are to be sent to clients at specified times.
+"""
 router = APIRouter()
 
 # Simulated database of auto-messages

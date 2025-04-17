@@ -2,6 +2,19 @@ from fastapi import APIRouter, HTTPException
 from backend.models import StaffDetails
 from backend.database import cursor, conn
 
+"""Staff handling function for the booking site aggregator. It allows the admin to view all staff,
+add new staff, and delete existing staff. It stores the staff details in a MySQL database.
+This allows for ease of use for the admin to manage the staff. 
+
+Raises:
+    HTTPException: status code 500 if there is an error in the database connection or query execution.
+
+Returns:
+    _type_: function
+    get_all_staff: function to fetch all staff details from the database.
+    add_staff: function to add new staff details to the database.
+    delete_staff: function to delete staff details from the database.
+"""
 router = APIRouter()
 
 @router.get("/fetch")

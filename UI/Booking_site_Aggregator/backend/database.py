@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 from psycopg2.extras import RealDictCursor
 import psycopg2
 
+"""Connects to database and creates a cursor object. This allows for code reuse for the connection and cursor object.
+"""
 dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
 load_dotenv(dotenv_path)
 

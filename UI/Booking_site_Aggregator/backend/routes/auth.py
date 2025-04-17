@@ -4,6 +4,23 @@ from passlib.context import CryptContext
 from jose import jwt
 from backend.database import cursor, conn
 
+"""This is a FastAPI file that handles the authentication of users. It uses a key and 
+algorithm to encode the JWT token. It also uses the passlib library to hash the password and verify it.
+It has two endpoints:
+/signup and /login. The /signup endpoint is used to register a new user and the /login endpoint is used to log in an existing user.
+It connects to a PostgreSQL database and uses psycopg2 to execute SQL queries.
+It uses the pydantic library to validate the input data and the fastapi library to create the API endpoints.
+It uses the CryptContext class from the passlib library to hash and verify passwords.
+It uses the jwt library to encode and decode the JWT token.
+It uses the HTTPException class from the fastapi library to handle errors and exceptions.
+
+Raises:
+    HTTPException: status code 400 detal: error
+    HTTPException: status code 401 detal: invalid credentials
+
+Returns:
+    _type_: functions that handle the authentication of users
+"""
 router = APIRouter()
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
