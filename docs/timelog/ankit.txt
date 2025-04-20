@@ -35,3 +35,19 @@ Date: 4/01/2025- 4/08/2025
 4/07/2025,5 hours, Worked on Api for managing the customer details.Commit id:-43309928cdc3d5de68234afd857c8ab39404ebd1
 Commit Id:-https://github.com/jeannamatthews-classes/group-project-booking-site-aggregator/commit/497201833ebc1a99fcf505c5d2ed3adbc6f69aaf.
 
+
+Date: 4/09/2025- 4/16/2025
+ 4/09/2025,5 hours,Added sites on the home screen for booking of the site
+ 4/10/2025,5 hours, Created the end points for the booking for the customer. Commit Id:-b68c2d16e67100f0921d2b5697aba83d77ab83e4
+ 4/11/2025,3 hours, update the code with the library
+ 4/12/2025,5 hours,designed the form for the customer so that it can manage the booking 
+ 4/13/2025,5 hours,Integration of the API with UI parts
+ 4/14/2025,5 hours,Added the contraints on the forms 
+ 4/15/2025,5 hours,Created the logo for the sites
+ 4/16/2025,5 hours,Added the security constraints on the UI Part
+
+
+
+
+
+
