@@ -5,23 +5,9 @@ from starlette.middleware.cors import CORSMiddleware
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
-"""This is a FastAPI application that connects to a mySQL database and provides endpoints for managing staff and customer details.
-    It is the main backend application for the Booking Site Aggregator project. It handles CRUD operations for staff and customer details.
-    The application uses FastAPI for building the API and psycopg2 for connecting to the mySQL database. 
-
-
-Raises:
-    HTTPException: status coe 400
-    HTTPException: status code 500
-    HTTPException: Exception: error connecting to database
-    HTTPException: Exception: error connecting to server
-
-Returns:
-    _type_: void
-"""
 app = FastAPI()
 
-# Add CORS middleware 
+# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:4200"],  # Allow the frontend app running on localhost:4200
@@ -30,7 +16,6 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-#use try and catch
 try:
     conn = psycopg2.connect(
         host="localhost",
@@ -101,7 +86,7 @@ def delete_staff_details(ID: int):
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
     
 @app.put("/updatestaffdetails/{ID}")
-def update_staff_details(ID: int, Name: str = None, Gender: str = None, Phone_number: int = None, Email_Id: str = None, DOB: str = None, Shift: str = None, Attends: str = None):
+def update_staff_details(ID: int, Name: str = None, Gender: str = None, Phone_number: int = None, Email_Id: str = None, DOB: str = None, Shift: str = None, Attends: str = None,Manager: str = None):
     if cursor is None:
         raise HTTPException(status_code=500, detail="Database connection error")
     
@@ -131,6 +116,9 @@ def update_staff_details(ID: int, Name: str = None, Gender: str = None, Phone_nu
         if Attends is not None:
             update_fields.append('"Attends" = %s')
             values.append(Attends)
+        if Manager is not None:
+            update_fields.append('"Manager" = %s')
+            values.append(Manager)
         
         if not update_fields:
             raise HTTPException(status_code=400, detail="No fields provided for update")
@@ -155,7 +143,7 @@ def update_staff_details(ID: int, Name: str = None, Gender: str = None, Phone_nu
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
 
 
-# Customer APIs
+# Customer APIs start here
 @app.get("/fetchCustomerdetails")
 def root():
     try:
@@ -213,9 +201,6 @@ def update_staff_details(CustomerID: int, Reservations: str = None, Name: str = 
         if Loyalty_programs is not None:
             update_fields.append('"Loyalty_programs" = %s')
             values.append(Loyalty_programs)
-        
-
-
         if not update_fields:
             raise HTTPException(status_code=400, detail="No fields provided for update")
 
@@ -236,4 +221,44 @@ def update_staff_details(CustomerID: int, Reservations: str = None, Name: str = 
     
     except Exception as e:
         conn.rollback()
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
+
+
+@app.delete("/deletecustomerdetails")
+def delete_customer_details(CustomerID: int):
+    if cursor is None:
+        raise HTTPException(status_code=500, detail="Database connection error")
+    
+    try:
+        cursor.execute('DELETE FROM public."Customer_details" WHERE "CustomerID" = %s;', (CustomerID,))
+        
+        if cursor.rowcount == 0:
+            return {"message": "No Customer_details found with the given ID"}
+        
+        conn.commit()  
+        return {"message": "Customer_details details deleted successfully"}
+    
+    except psycopg2.Error as e:
+        conn.rollback()  
+        raise HTTPException(status_code=400, detail=f"Database error: {str(e)}")
+
+    except Exception as e:
+        conn.rollback()  
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
+
+
+@app.post("/addcustomerdetails")
+def add_staff_details(ID: int, Name: str, Gender: str, Phone_number: int, Email_Id: str, DOB: str, Shift: str, Attends: str,Manager: str):
+    try:
+        cursor.execute('INSERT INTO public."Staff_details" ("ID","Name", "Gender", "Phone_number","Email_Id","DOB","Shift","Attends","Manager") VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);',
+                       (ID, Name, Gender, Phone_number, Email_Id, DOB, Shift, Attends,Manager))
+        conn.commit()  # Commit the transaction
+        return {"message": "Staff details added successfully"}
+    
+    except psycopg2.Error as e:
+        conn.rollback()  # Rollback in case of error
+        raise HTTPException(status_code=400, detail=f"Database error: {str(e)}")
+
+    except Exception as e:
+        conn.rollback()  # Rollback any general error
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
