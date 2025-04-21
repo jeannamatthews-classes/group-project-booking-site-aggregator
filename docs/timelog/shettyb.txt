@@ -60,3 +60,21 @@ h. LastUpdated
 commit Id:- 3ce3f3187da0f2947baec2df0b7569683c5e5b23
 4. 04/08/2025, 15 mins, Worked on discussion of the more funcationality with the team.
 5. 04/08/2025, 45 mins, Worked on the local setup for the UI Part on my local machine.
+
+Date: 04/09/2025 - 04/18/2025
+Time Spent:
+Task Description:
+04/09/2025,  1 hour, Modified customer details table to manage inventory.
+04/10/2025,  2 hour, Continued working on customer details table to get invetory price added. 
+commit Id:- 62c88805db4cf952db99003a51b8447ae0a7a823
+04/11/2025,  4 hour, Worked on Mail logic to send to be sent on sucessfully booking
+04/12/2025,  4 hour,Continued working on the mail sending logic on sucessful booking 
+04/13/2025,  4 hour,Worked on created API for sending mail. 
+commit Id:- d8257c13eb90df1274b0a6a10f6b9fce281eaf10
+04/14/2025, 1 hour, Updated the presentation with final demo.
+04/17/2025, 2 hour, Working on shifting from postgre to sql.
+04/18/2025, 2 hour, Continued to work on shifting from postgre to sql.
+
+
+
+
