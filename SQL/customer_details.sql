@@ -1,5 +1,3 @@
--- Table: public.Customer_details
-
 DROP TABLE IF EXISTS public."Customer_details";
 
 CREATE TABLE IF NOT EXISTS public."Customer_details"
