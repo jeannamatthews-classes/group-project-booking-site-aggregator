@@ -262,3 +262,38 @@ def add_staff_details(ID: int, Name: str, Gender: str, Phone_number: int, Email_
     except Exception as e:
         conn.rollback()  # Rollback any general error
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
+
+
+#Send Mail APIs start here
+def send_email(to_email: str, subject: str, body: str):
+    sender_email = "ankitmhadye1@gmail.com"
+    sender_password = "abc"  # Use app-specific password if needed
+    smtp_server = "smtp.gmail.com"
+    smtp_port = 587
+
+    msg = MIMEMultipart()
+    msg["From"] = sender_email
+    msg["To"] = to_email
+    msg["Subject"] = subject
+
+    msg.attach(MIMEText(body, "plain"))
+
+    with smtplib.SMTP(smtp_server, smtp_port) as server:
+        server.starttls()
+        server.login(sender_email, sender_password)
+        server.sendmail(sender_email, to_email, msg.as_string())
+
+
+class EmailRequest(BaseModel):
+    to_email: str
+    subject: str
+    body: str
+
+
+@app.post("/send-email/")
+def trigger_email(email: EmailRequest):
+    try:
+        send_email(email.to_email, email.subject, email.body)
+        return {"message": "Email sent successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
