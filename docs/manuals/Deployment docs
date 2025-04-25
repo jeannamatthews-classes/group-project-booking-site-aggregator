@@ -1,1 +1,7 @@
-
+ANGULAR TUTORIAL
+1. cd to angular project (terminal should say angular_18_tutorial)
+2. ng serve
+3. if that doesn't work make sure that angular is installed
+4. if the server still won't start: rm -rf node_modules package-lock.json
+5. then npm install (this will reinstall packages and dependencies)
+6. ng serve and follow the localhost link
