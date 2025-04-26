@@ -11,6 +11,7 @@
     white-space: nowrap;
     display: flex;
     flex-direction: column; /* Align items vertically */
+    box-sizing: border-box;
   }
   
   .sidebar9:hover {
@@ -20,7 +21,7 @@
   .sidebar9 .navbar-nav {
     display: flex;
     flex-direction: column; /* Align items vertically */
-    padding-left: 0; /* Remove default padding */
+    padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
     list-style: none; /* Remove bullet points */
     width: 100%; /* Ensure full width for nav items */
@@ -58,4 +59,33 @@
     top: 0;
     right: 0;
     margin: 10px; /* Adjust spacing as needed */
+  }
+  
+
+  .marquee {
+    position: fixed; /* Ensures it stays at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%; /* Full width of the page */
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #c9ffc9; /* Optional: Add a background color for visibility */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  .marquee p {
+    display: inline-block;
+    padding-left: 80%; /* Start the text outside the visible area */
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 79, 24);
+    align-items: center;
+  }
+
+  .main {
+    background-color: rgb(182, 182, 182);
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw;
   }
