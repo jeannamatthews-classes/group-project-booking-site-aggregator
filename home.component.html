@@ -1,0 +1,91 @@
+<a class="logo-container" href="javascript:void(0)">
+  <img src="logo.ico" alt="Logo">
+</a>
+<div class="booking-container">
+    <div class="marquee">
+      <p>WELCOME TO BOOKING SITE AGGREGATOR</p>
+    </div>
+    <table class="logo-table">
+      <tr>
+        <th style="padding-right: 20px;">
+          <img src="Campspot.ico" width="150" height="150" alt="Campspot Logo" />
+          <br />
+          <!-- Correct click event binding -->
+          <button class="btn-spacing" (click)="openForm('Campspot')">Book</button>
+        </th>
+        <th>
+          <img src="Campspot.ico" width="150" height="150" alt="Campspot Logo" />
+          <br />
+          <button class="btn-spacing" (click)="openForm('Another Campspot')">Book</button>
+        </th>
+      </tr>
+    </table>
+  
+    <div *ngIf="showForm" class="form-container">
+      <h3>Booking Details - {{ selectedListing }}</h3>
+      <form (ngSubmit)="submitBooking()" #bookingForm="ngForm">
+        <div class="form-row">
+          <div class="form-col">
+            <label>Name:</label>
+            <input type="text" [(ngModel)]="customer.Name" name="name" required />
+          </div>
+          <div class="form-col">
+            <label>Email:</label>
+            <input type="email" [(ngModel)]="customer.Email_Id" name="email_Id" required />
+          </div>
+        </div>
+      
+        <div class="form-row">
+          <div class="form-col">
+            <label>Phone Number:</label>
+            <input type="tel" [(ngModel)]="customer.Phone_num" name="phone_num" required />
+          </div>
+          <div class="form-col">
+            <label>Preferences:</label>
+            <input type="text" [(ngModel)]="customer.Preferences" name="preferences" required />
+          </div>
+        </div>
+      
+        <!-- Keep repeating the pattern -->
+        <div class="form-row">
+          <div class="form-col">
+            <label>Check-In Date:</label>
+            <input type="date" [(ngModel)]="customer.Check_In_Date" name="check_In_Date" required />
+          </div>
+          <div class="form-col">
+            <label>Check-Out Date:</label>
+            <input type="date" [(ngModel)]="customer.Check_Out_Date" name="check_Out_Date" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-col">
+            <label>Inventory:</label>
+            <select [(ngModel)]="customer.Inventory" name="Inventory" required (change)="updateInventoryPrice()">
+              <option value="" disabled selected>Select an option</option>
+              <option value="Boat">Boat</option>
+              <option value="Tent">Tent</option>
+            </select>
+          </div>
+          <div class="form-col">
+            <label>Inventory Price:</label>
+            <input type="text" [(ngModel)]="customer.Inventory_price" name="Inventory_price" required readonly />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-col">
+            <label>Loyalty Programs:</label>
+            <input type="text" [(ngModel)]="customer.Loyalty_programs" name="loyalty_programs" required />
+          </div>
+          
+        </div>
+      
+        <div class="form-row">
+          <button class="btn btn-primary btn-spacing" type="submit"  (click)="updateBooking(customer)">Submit</button>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+  
