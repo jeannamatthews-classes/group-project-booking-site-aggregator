@@ -1,0 +1,91 @@
+<div *ngIf="staffDetails && staffDetails.length > 0; else noData">
+  <table class="table table-bordered" style="width:100%; border: 2px solid black; border-radius: 5px; margin-top: 20px;">
+
+      <thead>
+        <tr>
+          <th>Sr.No</th>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Phone_number</th>
+          <th>Email_Id</th>
+          <th>DOB</th>
+          <th>Shift</th>
+          <th>Attends</th>
+          <th>Manager</th>
+        </tr>
+      </thead>
+      <tbody>
+       
+        <tr *ngFor="let staff of staffDetails; let srno = index">
+          <td>{{ srno + 1 }}</td>
+          <td>{{ staff.ID }}</td>
+  
+          <!-- Editable Name -->
+          <td *ngIf="editIndex === srno">
+            <input [(ngModel)]="staff.Name" />
+          </td>
+          <td *ngIf="editIndex !== srno">{{ staff.Name }}</td>
+  <!-- Gender -->
+  <td *ngIf="editIndex === srno">
+    <input [(ngModel)]="staff.Gender" />
+  </td>
+  <td *ngIf="editIndex !== srno">{{ staff.Gender }}</td>
+
+  <!-- Phone -->
+  <td *ngIf="editIndex === srno">
+    <input [(ngModel)]="staff.Phone_number" />
+  </td>
+  <td *ngIf="editIndex !== srno">{{ staff.Phone_number }}</td>
+
+  <!-- Email -->
+  <td *ngIf="editIndex === srno">
+    <input [(ngModel)]="staff.Email_Id" />
+  </td>
+  <td *ngIf="editIndex !== srno">{{ staff.Email_Id }}</td>
+
+  <!-- DOB -->
+  <td *ngIf="editIndex === srno">
+    <input [(ngModel)]="staff.DOB" type="date" />
+  </td>
+  <td *ngIf="editIndex !== srno">{{ staff.DOB }}</td>
+
+  <!-- Shift -->
+  <td *ngIf="editIndex === srno">
+    <input [(ngModel)]="staff.Shift" />
+  </td>
+  <td *ngIf="editIndex !== srno">{{ staff.Shift }}</td>
+
+  <!-- Attends -->
+  <td *ngIf="editIndex === srno">
+    <input [(ngModel)]="staff.Attends" />
+  </td>
+  <td *ngIf="editIndex !== srno">{{ staff.Attends }}</td>
+
+  <!-- Manager -->
+  <td *ngIf="editIndex === srno">
+    <input [(ngModel)]="staff.Manager" />
+  </td>
+  <td *ngIf="editIndex !== srno">{{ staff.Manager }}</td>
+          <td>
+            <button class="btn btn-primary btn-spacing" *ngIf="editIndex !== srno" (click)="enableEdit(srno)">Edit</button>
+            <button class="btn btn-primary btn-spacing" (click)="updateStaffDetails(staff)">Save</button>
+            <button class="btn btn-danger" (click)="deleteStaffDetails(staff.ID)" >Delete</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <ng-template #noData>
+    <p>No inventory data.</p>
+  </ng-template>
+  
+
+  <style>
+    .btn-spacing {
+      margin-right: 10px; /* Add custom space between buttons */
+    }
+  </style>
+  

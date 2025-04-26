@@ -1,0 +1,44 @@
+<div class="col-4 mx-auto">
+  <div class="card">
+    <div class="card-header bg-success text-white text-center">
+      <h4>Login</h4>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="login()" #loginForm="ngForm">
+        <div class="d-flex justify-content-center">
+          <div class="w-100" style="max-width: 300px;">
+            <div class="mb-3 text-start">
+              <label for="username" class="form-label">Username:</label>
+              <input
+                type="text"
+                id="username"
+                class="form-control"
+                placeholder="Enter username"
+                name="username"
+                [(ngModel)]="loginData.username"
+                required
+              />
+            </div>
+            <div class="mb-3 text-start">
+              <label for="password" class="form-label">Password:</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Enter password"
+                name="password"
+                [(ngModel)]="loginData.password"
+                required
+              />
+            </div>
+            <div class="text-center">
+              <button class="btn btn-primary w-100" type="submit">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
