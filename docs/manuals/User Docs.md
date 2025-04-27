@@ -3,9 +3,6 @@
 ## Prerequisites
 Ensure you have a compatible IDE or code editor installed to work with JavaScript and Angular projects, such as:
 - Visual Studio Code (Recommended)
-- WebStorm
-- Sublime Text
-
 Additionally, verify that **Node.js** and **npm** are installed on your system.
 
 ---
