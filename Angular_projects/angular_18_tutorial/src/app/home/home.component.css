@@ -68,8 +68,8 @@
   
   .logo-container img {
     display: block;
-    width: 175px; /* Set the width as a percentage of the viewport */
-    height: 175px; /* Maintain aspect ratio */
+    width: 12vw; /* Set the width as a percentage of the viewport */
+    height: 20vh; /* Maintain aspect ratio */
   }
 
   .logo-table {
@@ -79,12 +79,4 @@
   .booking-container {
     background-color: rgb(205, 185, 223);
   }
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
   
