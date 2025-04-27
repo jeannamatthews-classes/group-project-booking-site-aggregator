@@ -1,8 +1,13 @@
 from datetime import date
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
 from typing import Optional
 from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 from starlette.middleware.cors import CORSMiddleware
 import psycopg2
+
 from psycopg2.extras import RealDictCursor
 
 app = FastAPI()
@@ -87,7 +92,7 @@ def delete_staff_details(ID: int):
     
 @app.put("/updatestaffdetails/{ID}")
 def update_staff_details(ID: int, Name: str = None, Gender: str = None, Phone_number: int = None, Email_Id: str = None, DOB: str = None, Shift: str = None, Attends: str = None,Manager: str = None):
-   if cursor is None:
+    if cursor is None:
         raise HTTPException(status_code=500, detail="Database connection error")
     
     try:
