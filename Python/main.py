@@ -87,7 +87,7 @@ def delete_staff_details(ID: int):
     
 @app.put("/updatestaffdetails/{ID}")
 def update_staff_details(ID: int, Name: str = None, Gender: str = None, Phone_number: int = None, Email_Id: str = None, DOB: str = None, Shift: str = None, Attends: str = None,Manager: str = None):
-    if cursor is None:
+   if cursor is None:
         raise HTTPException(status_code=500, detail="Database connection error")
     
     try:
@@ -118,6 +118,7 @@ def update_staff_details(ID: int, Name: str = None, Gender: str = None, Phone_nu
             values.append(Attends)
         if Manager is not None:
             update_fields.append('"Manager" = %s')
+            
             values.append(Manager)
         
         if not update_fields:
@@ -132,10 +133,13 @@ def update_staff_details(ID: int, Name: str = None, Gender: str = None, Phone_nu
             return {"message": "No staff found with the given ID"}
         
         conn.commit()
+        
         return {"message": "Staff details updated successfully"}
     
     except psycopg2.Error as e:
+        
         conn.rollback()
+        
         raise HTTPException(status_code=400, detail=f"Database error: {str(e)}")
     
     except Exception as e:
@@ -160,6 +164,7 @@ def root():
 @app.put("/updatesCustomerdetails/{CustomerID}")
 def update_staff_details(CustomerID: int, Reservations: str = None, Name: str = None,
                          Email_Id : str=None,
+                         
                           Phone_num: int = None, Preferences: str = None, Payment_history: str = None,
                             Check_In_Date: Optional[date] = None,
     Check_Out_Date: Optional[date] = None,Loyalty_programs: int = None): 
@@ -174,33 +179,43 @@ def update_staff_details(CustomerID: int, Reservations: str = None, Name: str = 
         if CustomerID is not None:
             update_fields.append('"CustomerID" = %s')
             values.append(CustomerID)
+            
         if Reservations is not None:
             update_fields.append('"Reservations" = %s')
             values.append(Reservations)
+            
         if Name is not None:
             update_fields.append('"Name" = %s')
             values.append(Name)
+            
         if Email_Id is not None:
             update_fields.append('"Email_Id" = %s')
             values.append(Email_Id)
+            
         if Phone_num is not None:
             update_fields.append('"Phone_num" = %s')
             values.append(Phone_num)
+            
         if Preferences is not None:
             update_fields.append('"Preferences" = %s')
             values.append(Preferences)
+            
         if Payment_history is not None:
             update_fields.append('"Payment_history" = %s')
             values.append(Payment_history)
+            
         if Check_In_Date is not None:
             update_fields.append('"Check_In_Date" = %s')
             values.append(Check_In_Date)
+            
         if Check_Out_Date is not None:
             update_fields.append('"Check_Out_Date" = %s')
             values.append(Check_Out_Date)
+            
         if Loyalty_programs is not None:
             update_fields.append('"Loyalty_programs" = %s')
             values.append(Loyalty_programs)
+            
         if not update_fields:
             raise HTTPException(status_code=400, detail="No fields provided for update")
 
