@@ -70,8 +70,8 @@
   }
    .logo-container img {
     display: block;
-    width: 12vw; /* Set the width as a percentage of the viewport */
-    height: 20vh; /* Maintain aspect ratio */
+    width: 15.5vw; /* Set the width as a percentage of the viewport */
+    height: 25vh; /* Maintain aspect ratio */
     top: 0%;
   }
  
@@ -79,11 +79,11 @@
   .logo-table {
     display: grid; /* Enable Grid layout */
     grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
-    gap: 20px; /* Add spacing between images */
     padding: 20px; /* Optional: Add padding around the row */
     text-align: center; /* Center-align content */
     position: relative;
     top: 2vh; /* Adjust the top position as needed */
+    margin-left: -20px;
  }
  
  
