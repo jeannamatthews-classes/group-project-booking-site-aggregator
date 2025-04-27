@@ -1,8 +1,8 @@
 <a class="logo-container" href="javascript:void(0)">
   <img src="new-logo.ico" alt="Logo">
-</a>
-<div class="main">
-<div>
+ </a>
+ <div class="main">
+ <div>
     <div class="marquee">
       <p>WELCOME TO MASTER HOST</p>
     </div>
@@ -12,12 +12,12 @@
           <img src="site1.ico" alt="Campspot Logo" />
           <br />
           <!-- Correct click event binding -->
-          <button class="btn-spacing" (click)="openForm('Campspot')">Book</button>
+          <button class="btn-spacing" style="margin-top: 1vh; background-color: rgb(0, 79, 24); color: white; " (click)="openForm('Campspot')">Book</button>
         </th>
         <th class="th-spacing">
           <img src="site2.ico" alt="Campspot Logo" />
           <br />
-          <button class="btn-spacing" (click)="openForm('Another Campspot')">Book</button>
+          <button class="btn-spacing" style="margin-top: 1vh; background-color: rgb(0, 79, 24); color: white; " (click)="openForm('Another Campspot')">Book</button>
         </th>
       </tr>
       <tr>
@@ -25,17 +25,16 @@
           <img src="site3.ico" alt="Campspot Logo" />
           <br />
           <!-- Correct click event binding -->
-          <button class="btn-spacing" (click)="openForm('Campspot')">Book</button>
+          <button class="btn-spacing" style="margin-top: 1vh; background-color: rgb(0, 79, 24); color: white; " (click)="openForm('Campspot')">Book</button>
         </th>
         <th class="th-spacing">
           <img src="site4.ico" alt="Campspot Logo" />
           <br />
-          <button class="btn-spacing" (click)="openForm('Another Campspot')">Book</button>
+          <button class="btn-spacing" style="margin-top: 1vh; background-color: rgb(0, 79, 24); color: white; " (click)="openForm('Another Campspot')">Book</button>
         </th>
       </tr>
     </table>
-  
-    <div *ngIf="showForm" class="form-container">
+     <div *ngIf="showForm" class="form-container" style="margin-top: 1vh;">
       <h3>Booking Details - {{ selectedListing }}</h3>
       <form (ngSubmit)="submitBooking()" #bookingForm="ngForm">
         <div class="form-row">
@@ -48,7 +47,7 @@
             <input type="email" [(ngModel)]="customer.Email_Id" name="email_Id" required />
           </div>
         </div>
-      
+     
         <div class="form-row">
           <div class="form-col">
             <label>Phone Number:</label>
@@ -59,7 +58,7 @@
             <input type="text" [(ngModel)]="customer.Preferences" name="preferences" required />
           </div>
         </div>
-      
+     
         <!-- Keep repeating the pattern -->
         <div class="form-row">
           <div class="form-col">
@@ -71,7 +70,8 @@
             <input type="date" [(ngModel)]="customer.Check_Out_Date" name="check_Out_Date" required />
           </div>
         </div>
-
+ 
+ 
         <div class="form-row">
           <div class="form-col">
             <label>Inventory:</label>
@@ -86,20 +86,21 @@
             <input type="text" [(ngModel)]="customer.Inventory_price" name="Inventory_price" required readonly />
           </div>
         </div>
-
+ 
+ 
         <div class="form-row">
           <div class="form-col">
             <label>Loyalty Programs:</label>
             <input type="text" [(ngModel)]="customer.Loyalty_programs" name="loyalty_programs" required />
           </div>
-          
+         
         </div>
-      
+     
         <div class="form-row">
           <button class="btn btn-primary btn-spacing" type="submit"  (click)="updateBooking(customer)">Submit</button>
         </div>
       </form>
-      
+     
     </div>
   </div>
-</div>
+ </div>
