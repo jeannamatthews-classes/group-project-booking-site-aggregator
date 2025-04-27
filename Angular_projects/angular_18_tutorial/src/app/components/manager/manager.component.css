@@ -1,0 +1,32 @@
+.marquee {
+    position: fixed; /* Ensures it stays at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%; /* Full width of the page */
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #c9ffc9; /* Optional: Add a background color for visibility */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  .marquee p {
+    display: inline-block;
+    padding-left: 100%; /* Start the text outside the visible area */
+    font-size: 24px;
+    font-weight: bold;
+    animation: scrollText 10s linear infinite; /* Adjust duration as needed */
+    color: rgb(0, 79, 24);
+    align-items: center;
+  }
+  
+  
+    @keyframes scrollText {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
