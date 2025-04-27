@@ -9,7 +9,8 @@ time: 1 hour
 03/25/25-was trying to get the code from group repo to run on personal machine to start work. Additionally, played around with a state diagram but decided it's not needed
 time: 5 hours
 
-04/03/25-Past week, I have been working on the UI for the website as well as trying to configure the API for sending and receiving messages. Set up an Angular server as well as a backend. The messages do not work yet, but progress has been made
+04/03/25-Past week, I have been working on the UI for the website as well as trying to configure the API for sending and receiving messages. Set up an Angular server as well as a backend. 
+The messages do not work yet, but progress has been made
 time: 17 hours
 
 04/11/25-Worked on learning mySQL so that I can provide detailed documentation of the files. The most difficult was setting up a database on my machine but it will allow me to have more descriptive 
@@ -23,3 +24,11 @@ Time spent on Angular: 2 hours and 30 minutes
 
 04/17/25-Documented the Backend portion of the UI folder. I was more time efficient today, so doing more documenting in less time was easier. 
 Time spent: 1 hour 30 minutes
+
+04/26/25-Created a new UI setup as well as refining and updating app.component.html/css and home.component.html/css. 
+time spent: 7 hours
+
+04/27/25-Continued to refine the UI, including new logos, site images, home and login pages. Had merging issues with DS.store file when adding new icons. Added sliding text to all app components.
+Fine tuned buttons, navigation bar, and sidebar.
+time spent: 6.5 hours
+
