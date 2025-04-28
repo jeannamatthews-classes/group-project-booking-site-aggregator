@@ -1,4 +1,4 @@
-# 📌 User Instructions
+# User Instructions
 
 ## Prerequisites
 Ensure you have a compatible IDE or code editor installed to work with JavaScript and Angular projects, such as:
@@ -7,7 +7,7 @@ Additionally, verify that **Node.js** and **npm** are installed on your system.
 
 ---
 
-# 💻 Setup
+# Setup
 
 ## 1. Install Node.js
 Download and install Node.js from the official website:
@@ -27,7 +27,7 @@ This will install the Angular Command Line Interface globally on your machine.
 
 ---
 
-# 🎯 Project Preparation
+# Project Preparation
 
 ## 1. Navigate to the Project Directory
 Using your terminal or command prompt, navigate to the folder where your Angular project is located. Example:
@@ -49,7 +49,7 @@ This will read the `package.json` file and install all required libraries for th
 
 ---
 
-# 🚀 Running the Project
+# Running the Project
 
 ## 1. Open Two Terminal/Command Prompt Windows
 - Use the first window to serve the Angular development server.
@@ -79,7 +79,7 @@ You will see the live application running.
 
 ---
 
-# 🔝 Stopping the Server
+# Stopping the Server
 
 Once you are finished working with the project:
 
@@ -90,7 +90,7 @@ Repeat the same for any other active terminal windows if necessary.
 
 ---
 
-# 📝 Notes
+# Notes
 
 - If port 4200 is already in use, you can start the Angular server on a different port:
 
@@ -104,7 +104,7 @@ ng serve --port 4300
 
 ---
 
-# 📦 Quick Summary
+# Quick Summary
 
 ```bash
 npm install -g @angular/cli
