@@ -1,0 +1,9 @@
+Gantt chart Updates:
+There were three basic tasks for this week: Development, UI/UX, and ASMP services. Development specifically was building the initial setup of code in a vscode environment. This included a basic
+database setup, unit tests, and testing the unit tests. This went smoothly as it was a very high level directive of planning for the future. The UI/UX wasn't implemented this week however. There was
+a few revisions of it but the first draft was implemented and it was a basic angular server. Looking back we did not end up using this UI/UX but it did provide a good idea of what a final version could be.
+The ASMP services are an abreviation of Authentication, Management, Staff, and Payment. Management and Staff were the first to be implemented.
+
+Risks:
+Payment has proven to be the most difficult to deal with because it requires using the stripe api which we need a login for so that task has been pushed to be done later in the project. This could
+be an issue if it is more time consuming than we think. Otherwise the project is in early development and we are in a good position.
