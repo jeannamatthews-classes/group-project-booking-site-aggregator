@@ -1,0 +1,7 @@
+Gantt Chart Update:
+The UI/UX has functionality although it is basic. The main focus this week was on the database integrations along with the Authentication services and attendence for staff. This was implemented
+successfully. Although, with the project being in a demo state we do not plan to use the authentication until the project is complete. The databases are showing up in the UI and they are able to be
+changed in the website that we have deployed. The majority of work done this week was on databases and getting the postgres database setup for future adaptations.
+
+Risks:
+Right now the UI is crude but that isn't too big of a concern because that can be a relatively last minute change for some finishing touches so that the MVP is in good standing.
