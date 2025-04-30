@@ -4,7 +4,14 @@ import { Customer } from '../model/class/interface/Customer';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-
+/**
+ * The home.component.ts file defines the HomeComponent, which is part of the Angular
+ *  application. This component is responsible for managing customer bookings and
+ *  inventory-related operations. It includes methods to open a booking form,
+ *  submit bookings, update inventory prices, and reset the form. The component
+ *  interacts with a backend API using Angular's HttpClient to update customer
+ *  details and provides a user interface for managing bookings.
+ */
 @Component({
   selector: 'app-home',
   imports: [FormsModule, CommonModule],

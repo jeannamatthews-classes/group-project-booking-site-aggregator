@@ -1,3 +1,11 @@
+/**
+ * The Customer.ts file defines the Customer class, which represents the structure
+ *  of customer-related data. It includes properties such as CustomerID, Reservations,
+ *  Name, Email_Id, Phone_num, Preferences, Payment_history, Check_In_Date,
+ *  Check_Out_Date, Loyalty_programs, Inventory, and Inventory_price.
+ *  The class also provides a constructor to initialize these properties with default
+ *  values.
+ */
 export class Customer {
     CustomerID: number;
     Reservations: string;	

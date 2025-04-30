@@ -10,6 +10,14 @@ import psycopg2
 
 from psycopg2.extras import RealDictCursor
 
+'''The main.py file is a FastAPI application that provides RESTful APIs for managing staff and customer
+details in a PostgreSQL database. It includes endpoints to fetch, add, update, and delete records for
+both staff and customers. The application uses psycopg2 for database interactions and implements dynamic
+SQL queries for updates. Additionally, it includes functionality to send emails using the smtplib
+library. The file also incorporates CORS middleware to allow communication with a frontend
+application running on http://localhost:4200. Error handling is implemented to manage database
+and server errors effectively.'''
+
 app = FastAPI()
 
 # Add CORS middleware

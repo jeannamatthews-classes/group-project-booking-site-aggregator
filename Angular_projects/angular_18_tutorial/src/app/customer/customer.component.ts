@@ -3,6 +3,14 @@ import { Customer } from '../model/class/interface/Customer';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+/**
+ * The customer.component.ts file defines the CustomerComponent, which is part of
+ *  the Angular application. This component is responsible for managing customer-related
+ *  data and operations. It includes methods to fetch, update, and delete customer details
+ *  by interacting with a backend API using Angular's HttpClient. The component also
+ *  provides functionality for editing customer details and confirming actions like
+ *  deletion or updates through user prompts.
+ */
 
 @Component({
   selector: 'app-customer',

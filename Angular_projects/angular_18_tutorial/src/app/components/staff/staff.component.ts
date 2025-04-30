@@ -6,6 +6,14 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { environment } from '../../../environments/environment.development';
 import { Observable } from 'rxjs';
 
+/**
+ * The StaffComponent is responsible for managing staff details in the Angular application.
+ * It includes methods to fetch, update, and delete staff information from the backend API.
+ * The component uses Angular's HttpClient to make HTTP requests and provides a user interface 
+ * for staff management tasks. The component is designed to be standalone, allowing it to be used 
+ * independently in different parts of the application. It also includes confirmation dialogs
+ *  for delete and edit actions to enhance user experience.
+ */
 @Component({
   selector: 'app-staff',   
   standalone: true, // ✅ Added standalone mode

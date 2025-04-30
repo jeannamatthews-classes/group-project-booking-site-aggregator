@@ -1,3 +1,9 @@
+/**
+ * The ManagerDetails.ts file defines the IStaffDetails class, which represents
+ *  the structure of staff details managed by a manager. It includes properties
+ *  such as ID, Name, Gender, Phone_number, Email_Id, and DOB. The class also provides
+ *  a constructor to initialize these properties with default values.
+ */
 export class IStaffDetails {
     ID: number;
     Name: string;

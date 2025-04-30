@@ -4,7 +4,13 @@ import { CommonModule } from '@angular/common';
 import { Login } from '../../model/class/interface/Login'; 
 import { HttpClient, HttpParams } from '@angular/common/http';
 
-
+/**The login.component.ts file defines the LoginComponent, which is responsible
+ *  for handling user login functionality in the Angular application. It includes
+ *  methods to fetch customer details from the backend, manage login data, and display
+ *  confirmation dialogs for specific actions. The component interacts with the backend
+ *  API using Angular's HttpClient and provides a user interface for login-related
+ *  operations. 
+ */
 
 @Component({
   selector: 'app-login',

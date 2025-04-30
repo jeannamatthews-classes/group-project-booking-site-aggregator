@@ -3,6 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IStaffDetails } from '../model/class/interface/StaffDetails';
 
+/**
+ * The master.service.ts file defines the MasterService, which is an Angular service
+ *  responsible for managing staff-related data and operations. It includes methods
+ *  to fetch, update, and delete staff details by interacting with a backend API using
+ *  Angular's HttpClient. The service provides observable-based methods for API
+ *  interactions and maintains a local array of staff details for use within the
+ *  application.
+ */
 @Injectable({
   providedIn: 'root'
 })

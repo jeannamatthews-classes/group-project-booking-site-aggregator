@@ -1,3 +1,10 @@
+/**
+ * The StaffDetails.ts file defines the IStaffDetails class, which represents
+ *  the structure of detailed staff information. It includes properties such as ID,
+ *  Name, Gender, Phone_number, Email_Id, DOB, Shift, Attends, and Manager.
+ *  The class also provides a constructor to initialize these properties with
+ *  default values.
+ */
 export class IStaffDetails {
   ID: number;
   Name: string;
